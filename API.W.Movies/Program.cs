@@ -19,7 +19,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+//add-migration InitialDB
+//update-database 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
