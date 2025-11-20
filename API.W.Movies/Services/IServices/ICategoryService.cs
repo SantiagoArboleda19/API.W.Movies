@@ -9,8 +9,8 @@ namespace API.W.Movies.Services.IServices
         Task<CategoryDto> GetCategoryAsync(int id);
         Task<bool> CategoryExistByIdAsync(int id);
         Task<bool> CategoryExistsByNameAsync(string name);
-        Task<CategoryDto> CreateCategoryAsync(CategoryCreateDto categoryDto);
-        Task<bool> UpdateCategoryAsync(Category category);
+        Task<CategoryDto> CreateCategoryAsync(CategoryCreateUpdateDto categoryDto);
+        Task<CategoryDto> UpdateCategoryAsync(CategoryCreateUpdateDto dto, int id);
         Task<bool> DeleteCategoryAsync(int id);
     }
 }
