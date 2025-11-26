@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection")));
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<Mappers>());
 
-//Dependency Injection for Services
+//Dependency Injection for Categories
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 //Dependency Injection for Services
